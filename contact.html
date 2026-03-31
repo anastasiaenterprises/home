@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Anastasia Enterprises</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Josefin+Sans:wght@700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="page-contact">
+
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Anastasia Enterprises" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="page-header-content">
+      <span class="hero-eyebrow">Get In Touch</span>
+      <h1 class="page-title">Begin Your <em>Consultation</em></h1>
+      <p class="page-subtitle">Whether you're launching a trading operation, managing risk exposure, or seeking market clarity, we're ready to help.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-inner">
+
+      <div class="contact-info">
+        <span class="section-label">Our Approach</span>
+        <h2 class="section-title">A Confidential, <em>Personal Process</em></h2>
+        <p>Every engagement begins with a confidential discovery call. We listen first, understanding your operation, challenges, and goals before proposing any solution.</p>
+        <p>Our consulting relationships are built on discretion, accountability, and results. We don't take every client, only those we can meaningfully serve.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">&#9670;</span>
+            <div>
+              <span class="contact-detail-label">Response Time</span>
+              <span class="contact-detail-value">Within 1 business day</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">&#9670;</span>
+            <div>
+              <span class="contact-detail-label">Initial Consultation</span>
+              <span class="contact-detail-value">Complimentary 30-minute call</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">&#9670;</span>
+            <div>
+              <span class="contact-detail-label">Confidentiality</span>
+              <span class="contact-detail-value">NDA available upon request</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-metals-strip">
+          <span class="metal-label">Pt</span>
+          <span class="metal-label">Pd</span>
+          <span class="metal-label">Rh</span>
+          <span class="metal-label">Au</span>
+          <span class="metal-label">Ag</span>
+          <span class="metal-label">Ir</span>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xbdzaedp"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Area of Interest</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service area</option>
+              <option value="trading-desk">Trading Desk Setup &amp; Operations</option>
+              <option value="market-intelligence">Market Intelligence &amp; Price Analysis</option>
+              <option value="hedging">Hedging &amp; Risk Management</option>
+              <option value="supplier-relations">Supplier &amp; Buyer Relationship Management</option>
+              <option value="compliance">Regulatory &amp; Compliance Advisory</option>
+              <option value="business-process">Business Process Documentation</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Needs</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your operation, current challenges, and what you're hoping to achieve..." required></textarea>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" id="nda" name="nda_requested" value="yes" />
+            <label for="nda" class="check-label">I would like to request a mutual NDA before sharing details</label>
+          </div>
+
+          <!-- Honeypot for spam -->
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_subject" value="New Inquiry from Anastasia Enterprises Website" />
+
+          <button type="submit" class="btn-primary btn-submit">
+            <span class="btn-text">Send Inquiry</span>
+            <span class="btn-arrow">&#8594;</span>
+          </button>
+
+          <div id="form-success" class="form-success" style="display:none">
+            <span class="success-icon">&#10003;</span>
+            <p>Thank you. Your inquiry has been received. We will be in touch within one business day.</p>
+          </div>
+          <div id="form-error" class="form-error" style="display:none">
+            <p>Something went wrong. Please try again or reach out directly.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Anastasia Enterprises" />
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Anastasia Enterprises. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
